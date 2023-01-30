@@ -23,11 +23,13 @@
          <?php include './include/header.php' ?>   
     </div><!--header ende-->
 
-    <div class="container-felx d-flex justify-content-center text-white bg-primary"> 
+    <div class="container d-flex justify-content-center pt-5  pb-5  text-white bg-primary "> 
     <h1>Hallo Welt</h1>
     <p>Hallo wir starten mit Datenbanken mysql und PHP und PDO!</p>
     </div>
-    <form class="px-4" action="index.php?seite=question9" method="POST">
+    <br>
+    <br>
+    <form class="container-felx d-flex justify-content-center px-4" action="index.php?seite=question9" method="POST">
           <h3>Quiz Auswahl</h3>
           <!--input-groupmit Numerischem eingabefeld Frage 6-->
           <label for="vegetables">

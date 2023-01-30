@@ -36,10 +36,10 @@
 
     </div>
 
-    <div class="container justify-content-center text-white bg-primary mt-100px"> 
-        <h1>Questions</h1>
-        <br>
-        <p><?php echo   $question['question_text'];?></p>
+    <div class="container d-flex justify-content-center pt-5  pb-5 text-white bg-primary "> 
+        <h1 class="col-4">Questions</h1>
+    
+        <p class="col-4"><?php echo   $question['question_text'];?></p>
     </div>
 
    <!-- <div class="container justify-content-center text-white">
@@ -65,42 +65,48 @@
     </div>-->
 
 
+    <div class="container d-flex col-12 pt-5 text-primary">
 
-    <form id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');">
-        <?php 
+        <img class="container col-3" src="/img/group-wild-african-animal-white_1308-56241.webp" alt="test" style="width: 33%;">
+      
+        <form class="container col-6" style="width:33%;" id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');">
+            <?php 
 
-        //Generiere Antwort.Radio-Bittons mit Beschriftung
+            //Generiere Antwort.Radio-Bittons mit Beschriftung
 
-        //Singel Choice: Hole den Namen  der richtigen Antwortspalte in $correct, aus $question["correct"]
-        $correct = $question["correct"];
+            //Singel Choice: Hole den Namen  der richtigen Antwortspalte in $correct, aus $question["correct"]
+            $correct = $question["correct"];
 
-        for ($a = 1; $a <= 5; $a++) {
-            //Setzte für $answerColumnName den Namen der Tabellensplte "answer-N" zusammen
-            $answerColumnName = "answer-" . $a;
+            for ($a = 1; $a <= 5; $a++) {
+                //Setzte für $answerColumnName den Namen der Tabellensplte "answer-N" zusammen
+                $answerColumnName = "answer-" . $a;
 
-            //Falls es überhaubt Antworttext in $question[$answerColumnName]gibt
-            //und der Antworttext nicht gleich '', dann ...
+                //Falls es überhaubt Antworttext in $question[$answerColumnName]gibt
+                //und der Antworttext nicht gleich '', dann ...
 
-            if (isset($question[$answerColumnName]) && $question[$answerColumnName]  !== '') {
-                //....hole den antworttext aus $question.
-                $answerText = $question[$answerColumnName];
+                if (isset($question[$answerColumnName]) && $question[$answerColumnName]  !== '') {
+                    //....hole den antworttext aus $question.
+                    $answerText = $question[$answerColumnName];
 
-                //Entscheide für $value, wieviele Punkte die Antwort ergiebt:
-                //richtig -> 1 Punkt, falsch -> 0 Punkte
-                if ($correct === $answerColumnName) $value = 1;
-                else $value = 0;
+                    //Entscheide für $value, wieviele Punkte die Antwort ergiebt:
+                    //richtig -> 1 Punkt, falsch -> 0 Punkte
+                    if ($correct === $answerColumnName) $value = 1;
+                    else $value = 0;
+                    
 
-                echo "<div class='form-check'>
-                        <input class='form-check-input' type='radio' name='singel-choice id='$answerColumnName' value='$value'>
-                        <label class='form-check-label' for='single-choice-0'>$answerText</label>
-                    </div>";
-            
+
+                    echo "<div class='form-check'>
+                            <input class='form-check-input' type='radio' name='singel-choice id='$answerColumnName' value='$value'>
+                            <label class='form-check-label' for='single-choice-0'>$answerText</label>
+                        </div>";
+                    }
                 }
-            }
+            ?>
+        </form>
         
-        ?>
-    </form>
-
+        <img class="container col-3" src="/img/group-wild-african-animal-white_1308-56241.webp" alt="test"  style="width:33%;">
+    
+    </div>
       
     <div class="container-flex"><!--footer Start-->
           <?php include './include/footer2.php'?>  
