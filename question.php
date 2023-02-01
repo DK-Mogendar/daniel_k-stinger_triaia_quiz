@@ -86,6 +86,7 @@
                     }
                 }
             ?>
+             <button type="submit" class="btn btn-primary">Weiter</button>
         </form>
         
         <img class="container col-4" src="/assets/img/tier.png" alt="test">
