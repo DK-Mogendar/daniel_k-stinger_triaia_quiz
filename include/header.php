@@ -1,11 +1,11 @@
 
 <nav>
-    <div class="container-felx d-flex justify-content-center text-white bg-secondary">
+    <div class="header container-felx d-flex justify-content-center text-white bg-secondary">
 
         <?php
-        $name = "Daniel";
+        $name = "World to";
         $date = date("d.m.y");
-        echo "Hello $name / $date viel Spass beim Quiz";
+        echo "Hello $name / $date  much luck !!!";
         ?>
         
   <div> 

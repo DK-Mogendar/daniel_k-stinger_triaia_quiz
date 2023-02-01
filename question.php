@@ -1,3 +1,7 @@
+<?php
+  require "./include/data-collector.php"  //Muss ganz am anfang der Hauptseite sein,
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,48 +32,28 @@
         $question = fetchQuestionsById($id, $dbConnection);
     ?> 
 
+<input type="hidden" id="questionNum" value="15">
+<input type="hidden" id="lastQuestionIndex" name="lastQuestionIndex" value="11">
+<input type="hidden" id="indexStep" name="indexStep" value="1">
+
     <div class="container-flex"><!--header start--> 
          <?php include './include/header.php' ?>   
     </div><!--header ende-->
 
 
 
-    </div>
-
-    <div class="container d-flex justify-content-center pt-5  pb-5 text-white bg-primary "> 
-        <h1 class="col-4">Questions</h1>
+    <div class="titelbox container d-flex justify-content-center p5 text-white bg-primary "> 
+        <h1 class="titel col-4">Questions</h1>
     
-        <p class="col-4"><?php echo   $question['question_text'];?></p>
+        <p class="titel col-4"><?php echo   $question['question_text'];?></p>
     </div>
 
-   <!-- <div class="container justify-content-center text-white">
-            <h3 class="px-4 text-start">Frage ansich</h3>
-            <br>
-        <form class="px-4" action="./report.php" method="post">
-          <div class="btn-group flex-wrap" id="button-group" role="group" aria-label="Basic radio toggle button group">
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" value="1" autocomplete="off" checked>
-            <label class="btn btn-outline-primary my-3" for="btnradio1"><?php echo $question['answer-1'];?></label>
- 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" value="2" autocomplete="off">
-            <label class="btn btn-outline-primary my-3" for="btnradio2"><?php echo $question['answer-2'];?></label>
+    
+    <div class="container d-flex col-12 pt-5 text-dark">
 
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" value="3" autocomplete="off">
-            <label class="btn btn-outline-primary my-3" for="btnradio3"><?php echo $question['answer-3'];?></label>
-
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio4" value="4" autocomplete="off">
-            <label class="btn btn-outline-primary my-3" for="btnradio4"><?php echo $question['answer-4'];?></label>
-
-            <input type="radio" class="btn-check" name="btnradio" id="btnradio5" value="5" autocomplete="off">
-            <label class="btn btn-outline-primary my-3" for="btnradio5"><?php echo $question['answer-5'];?></label>
-        </form>
-    </div>-->
-
-
-    <div class="container d-flex col-12 pt-5 text-primary">
-
-        <img class="container col-3" src="/img/group-wild-african-animal-white_1308-56241.webp" alt="test" style="width: 33%;">
+        <img class="container-flex col-4" src="/assets/img/tier.png" alt="test">
       
-        <form class="container col-6" style="width:33%;" id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');">
+        <form class="frage p-5 container-flex col-4"  id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');">
             <?php 
 
             //Generiere Antwort.Radio-Bittons mit Beschriftung
@@ -104,12 +88,15 @@
             ?>
         </form>
         
-        <img class="container col-3" src="/img/group-wild-african-animal-white_1308-56241.webp" alt="test"  style="width:33%;">
+        <img class="container col-4" src="/assets/img/tier.png" alt="test">
     
     </div>
-      
+    <button class="buton" type="buton" class= "btn btn-info " onclick="document.location='index.php';">
+            Zurück zum Anfang
+            <span style='font-size:50px;'>&#128512;</span>
+
     <div class="container-flex"><!--footer Start-->
-          <?php include './include/footer2.php'?>  
+          <?php //include './include/footer2.php'?>  
     </div><!--footer Ende-->
 </body>
 </html>
