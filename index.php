@@ -44,8 +44,6 @@
 
 
 
-
-
     <label style="margin-top:20px;" for="questionNum" class="form-label">Number of Question</label>      
     <input style="width:100px" type="number" class="form-control" id="questionNum" name="questionNum" min="5" max="40" value="10">
       <!--
@@ -58,7 +56,7 @@
 
     <p id=" validation-warning" class="warnig"></p>
 
-    <input style="margin-top:20px;" type="submit" value="Start">
+    
     <!--submitbutton-->
     <button type="submit" class="btn btn-primary">Start</button>
 </form>

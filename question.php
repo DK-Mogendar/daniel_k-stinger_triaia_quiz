@@ -48,7 +48,7 @@
         <p class="titel col-4"><?php echo   $question['question_text'];?></p>
     </div>
 
-    
+
     <div class="container d-flex col-12 pt-5 text-dark">
 
         <img class="container-flex col-4" src="/assets/img/tier.png" alt="test">
@@ -91,6 +91,8 @@
         <img class="container col-4" src="/assets/img/tier.png" alt="test">
     
     </div>
+
+    <!--Mein Button um zurück zur Startseite zu kommen-->
     <button class="buton" type="buton" class= "btn btn-info " onclick="document.location='index.php';">
             Zurück zum Anfang
             <span style='font-size:50px;'>&#128512;</span>

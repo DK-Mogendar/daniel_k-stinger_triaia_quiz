@@ -2,9 +2,9 @@
     padding: 1%;
     /*background-image: url("/assets/img/glück.jpg");*/
 }
-body{
-   /* background-image: url("/assets/img/test2.jpg");*/
-}
+/*body{
+    background-image: url("/assets/img/test2.jpg");
+}*/
 .titelbox {
     padding: auto;
     border-radius: 30%;
@@ -20,15 +20,15 @@ body{
     border-radius: 25%;
     /*background-image: url("/assets/img/grüngrün.jpg");*/
     color:white;
-}*/
+}
 .buton{
     border-radius: 25%;
     /*background-image: url("/assets/img/grüngrün.jpg");*/
     color:white;
 }
-.footer {
-    /*background-image: url("/assets/img/glück.jpg");*/
-}
-.footer2 {
-   /* background-image: url("/assets/img/glück.jpg");*/
-}
+/*.footer {
+    background-image: url("/assets/img/glück.jpg");
+}*/
+/*.footer2 {
+    background-image: url("/assets/img/glück.jpg");
+}*/
