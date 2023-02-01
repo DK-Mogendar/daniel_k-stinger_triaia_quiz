@@ -2,10 +2,11 @@
         Dazu muss das data-collector.php ganz am Anfang einer Haupseite  per
         'Iclude' oder 'require? referenziert werden*/
 session_start();
-
+//Hilfwerkzeug Laden
 include './include/tools.php';
+include './include/db.php';
 
-//Fals verfügbar hole die Quiz-Daten aus der SESSIO.
+//Fals verfügbar hole die Quiz-Daten aus der SESSION.
 if (isset($_SESSION["quiz"])) $quiz = $_SESSION["quiz"];
 else $quiz = null;
 
@@ -51,12 +52,21 @@ if (str_contains($scriptName, 'index')) {// https://www.php.net/manual/en/funkti
 else if (str_contains($scriptName, 'question')) {
     if($lastQuestionIndex === -1 ) { //-1 bedeuted, dass das Quiz noch nicht gestartet wurde.
         //Starte ein neues Quiz...
+        $questionNum = intval($_POST["questionNum"]);
+
+        $questionIdSequence = fetchQuestionsIdSequence(
+            $_POST["topic"],
+            $questionNum,
+            $dbConnection
+
+        );
+        
         $quiz = array(
             "topic" => $_POST["topic"],
-            "questionNum" => $_POST["questionNum"],
+            "questionNum" => $questionNum,
             "lastQuestionIndex" => $lastQuestionIndex,
             "currentQuestionIndex" => -1,
-            "questionIdSequence" => array()
+            "questionIdSequence" => $questionIdSequence
         );
     }
 

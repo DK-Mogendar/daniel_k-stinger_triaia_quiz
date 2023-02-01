@@ -24,14 +24,12 @@
         <script src="/assets/js/main.js"></script>
 <body>
     <?php 
-        require 'include/db.php';
-
         // SQL-Statment formulieren: Alle Daten (ganze Tabelle)
         //zur Frage mit der  angegebenen $id auslesen
         $id = 222;
         $question = fetchQuestionsById($id, $dbConnection);
     ?> 
-
+<!--hidden ist ein verstecktes Feld das nich angezeigt wird-->
 <input type="hidden" id="questionNum" value="15">
 <input type="hidden" id="lastQuestionIndex" name="lastQuestionIndex" value="11">
 <input type="hidden" id="indexStep" name="indexStep" value="1">
@@ -85,7 +83,7 @@
                         </div>";
                     }
                 }
-            ?>
+            ?><!--submitbutton-->
              <button type="submit" class="btn btn-primary">Weiter</button>
         </form>
         
@@ -98,7 +96,7 @@
             Zurück zum Anfang
             <span style='font-size:50px;'>&#128512;</span>
 
-    <div class="container-flex"><!--footer Start-->
+    <div class="container-fluid"><!--footer Start-->
           <?php //include './include/footer2.php'?>  
     </div><!--footer Ende-->
 </body>

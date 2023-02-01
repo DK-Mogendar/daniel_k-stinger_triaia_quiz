@@ -17,11 +17,22 @@ function fetchQuestionsById($id, $dbConnection) {
     $sqlStatement = $dbConnection->query("SELECT * FROM `questions` WHERE `id` = $id");
     $row = $sqlStatement->fetch(PDO::FETCH_ASSOC);
 
+    return $row; 
+}
+function fetchQuestionsIdSequence($topic, $questionNum, $dbConnection) {
+    //SELECT `id` FROM `questions`WHERE `topic` = 'animals' ORDER BY RAND() LIMIT 5;
+    $query = "SELECT `id` FROM `questions`WHERE `topic` = '$topic' ORDER BY RAND() LIMIT $questionNum";
+    $sqlStatement = $dbConnection->query($query);
+    $rows = $sqlStatement->fetch(PDO::FETCH_COLUMN, 0);//ìd`ist Spalte (colm) 0.
     //print_r($row);
     /*
     Giebt zeilendaten als assoziatiever Array zu genau einer Frage zurück
     Beispiel: $row = array(id`=> 999)
     */
-    return $row; 
+    print_r($rows);
+    return $rows; 
 }
+
+
+
 ?>
