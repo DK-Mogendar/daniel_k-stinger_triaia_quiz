@@ -1,3 +1,4 @@
+Englisch
 # Docker for local web development: a basic LEMP stack (Linux, Nginx, MySQL, PHP)
 
 ## Content
@@ -62,6 +63,75 @@ $ docker-compose down -v
 ```
 
 To remove everything, including images and orphan containers:
+
+```
+$ docker-compose down -v --rmi all --remove-orphans
+```
+Deutsch
+# Docker für die lokale Webentwicklung: ein grundlegender LEMP-Stack (Linux, Nginx, MySQL, PHP)
+
+## Inhalt
+
+Dieser Zweig enthält einen grundlegenden LEMP-Stack, der auf Docker ausgeführt und von Docker Compose orchestriert wird, einschließlich:
+
+- Ein Container für Nginx;
+- Ein Container für PHP;
+- Ein Container für MySQL;
+- Ein Container für phpMyAdmin;
+
+## Voraussetzungen
+
+Stellen Sie sicher, dass [Docker Desktop für Mac oder PC](https://www.docker.com/products/docker-desktop) installiert ist und ausgeführt wird, oder gehen Sie [hierher](https://docs.docker.com/install /), wenn Sie ein Linux-Benutzer sind. Sie benötigen außerdem ein Terminal, auf dem [Git] (https://git-scm.com/) ausgeführt wird.
+
+Dieses Setup verwendet auch den Port 8000 von localhost für Nginx, stellen Sie also sicher, dass er verfügbar ist.
+
+## Gebrauchsanweisung
+
+Klonen Sie das Repository und ändern Sie das aktuelle Verzeichnis für das Stammverzeichnis des Projekts:
+
+```
+$ git-Klon https://github.com/opportunity-zh/opp-php-mysql.git
+
+$ cd opp-php-mysql
+```
+
+Führen Sie den folgenden Befehl aus:
+
+```
+$ docker-compose up -d
+```
+
+Dies kann ein wenig dauern, da einige Docker-Images möglicherweise heruntergeladen werden müssen.
+
+## Erläuterung
+
+Die vom Setup verwendeten Bilder werden in [`docker-compose.yml`](https://github.com/opportunity-zh/opp-php-mysql/docker-compose.yml) aufgelistet und konfiguriert.
+
+Beim erstmaligen Erstellen und Starten der Container basierend auf den Images wird automatisch eine MySQL-Datenbank mit dem Namen „library“ erstellt (Sie können in der Beschreibung des MySQL-Dienstes in „docker-compose.yml“ einen anderen Namen für die MYSQL_DATABASE auswählen).
+
+Die Datenbankdaten werden in einem eigenen lokalen Verzeichnis über das Volume „db_data“ gespeichert, das in den MySQL-Container eingehängt wird. Eine phpMyAdmin-Schnittstelle ist unter [localhost:8080](http://localhost:8080) verfügbar (die Datenbankanmeldeinformationen sind webDev / opport2022).
+
+## Aufräumen
+
+So stoppen Sie die Container:
+
+```
+$ docker-compose stop
+```
+
+Um die Behälter zu zerstören:
+
+```
+$ docker-compose down
+```
+
+So vernichten Sie die Container und die zugehörigen Volumes:
+
+```
+$ docker-compose down -v
+```
+
+So entfernen Sie alles, einschließlich Bilder und verwaiste Container:
 
 ```
 $ docker-compose down -v --rmi all --remove-orphans

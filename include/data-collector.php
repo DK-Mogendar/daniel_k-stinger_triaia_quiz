@@ -113,49 +113,36 @@ else if (str_contains($scriptName, 'question')) {
         }
     */
 
-    if ($currentQuestionIndex < $quiz["questionNum"]) {
-        // Fragestellung anzeigen
+    if ($currentQuestionIndex + 1 < $quiz["questionNum"]) {
+        // Fragestellung anzeigen 
         $actionUrl = "question.php";
-
     }
-    else {//$currentQuestion >= $quiz["questionNum]
-    // Redirect zur Auswertungsseite
-        $action = "report.php";
+    else { // $currentQuestionIndex >= $quiz["questionNum"]
+        // Redirect zur Auswertungsseite
+        $actionUrl = "report.php";
     }
 }
 
-//..... 
-$scriptName = $_SERVER['SCRIPT_NAME'];
+//report.php (Auswertungsseite)----------------------------------------------------------------------------------------------------------------------------------
+else if (str_contains($scriptName, 'report')) {
+    // Die Reportseite ist ausserhalb der Fragesequenz.
+    $currentQuestionIndex = -1;
+}
+else {
+    // Unbekannte URL
+}
 
-//Speichere Quizparameter und Post-Daten der letzten Frage in der Session.
+// Speichere Quizparameter und Post-Daten der letzten Frage in der Session.
 if (isset($quiz) && $currentQuestionIndex >= 0) {
     $_SESSION["quiz"] = $quiz;
     $_SESSION["quiz"]["lastQuestionIndex"] = $lastQuestionIndex;
     $_SESSION["quiz"]["currentQuestionIndex"] = $currentQuestionIndex;
 }
-if($lastQuestionIndex >= 0) {
+
+if ($lastQuestionIndex >= 0) { // Achtung: Nur für gültige Fragenindexe speichern.
     $questionName = "question-" . $lastQuestionIndex;
     $_SESSION[$questionName] = $_POST;
 }
-
 //DEVONLY: Gib die aktuelle $_SESSION in der Seite aus.
-prettyPrint($_SESSION, '$_SESSION = ');
-
-/*
-    JavaScript entscheidet beim Klicken auf die "previous" oder "next"
-    Buttons, welche Zielseite angesprungen wird.
-
-    Siehe main.js function navigate(direction)
-
-    PHP führt keine Checks und Redirects durch. Grund: Die Redirects
-    sind knifflig mit Header-Manipulation umzusetzten ( aufpassen darauf,
-    wann session_star () ausgelöhst wird.
-
-    if ($currentQuestionIndex <0) {
-        //Navigation von der 1.Farge zur Startseite: Redirect zur 
-    }
-*/ 
-// report.php----------------------------------------------------------------------------------------------
-
-
+//prettyPrint($_SESSION, '$_SESSION = ');
 ?>

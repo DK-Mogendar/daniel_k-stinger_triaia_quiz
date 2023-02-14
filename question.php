@@ -1,7 +1,6 @@
 <?php
   require "./include/data-collector.php"  //Muss ganz am anfang der Hauptseite sein,
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
