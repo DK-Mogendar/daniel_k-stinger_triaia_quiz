@@ -1,24 +1,23 @@
 .header{
     padding: 1%;
-    background-image: url("/assets/img/glück.jpg");
+    background-image: url("/assets/img/glueck.jpg");
 }
-body {
-    background-image: url("assets/img/glück.jpg");
+body{
+    background-image: url("/assets/img/bgWelt.jpg");
+    background-size: 100vw;
+    
+    color:white;
 }
 .titelbox{
     padding: auto;
     border-radius: 25%;
     background-image: url("/assets/img/test2.jpg");
 }
-.titel{
-    padding: 5%;
-    border-radius: 25%;
-    background-image: url("/assets/img/grüngrün.jpg");
-}
+
 .frage{
     padding: auto;
-    border-radius: 25%;
-    background-image: url("/assets/img/grüngrün.jpg");
+    border-radius: 30%;
+    background-image: url("/assets/img/glueck.jpg");
     color:white;
 }
 .buton{
@@ -27,5 +26,5 @@ body {
     color:white;
 }
 .footer {
-    background-image: url("/assets/img/glück.jpg");
+    background-image: url("/assets/img/glueck.jpg");
 }

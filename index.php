@@ -8,11 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
-
 <!--Bootstrap 5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -26,11 +21,15 @@
     <div class="container-flex"><!--header start--> 
          <?php include './include/header.php' ?>     
     </div>
-
+<br>
+<br>
+<br>
+<br>
+<br>
 
 <!-- FORMULAR "Themenwahl"-->
-    <div style="padding: 20px;">
-        <form class="frage" id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
+    <div class="frage container d-flex justify-content-center p-5 col-4" style="padding: 20px;">
+        <form class="" id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
             <!--Themenauswahl-->
             <label for="quiz-topic" class="="form-label>Quiz Thema - bitte auswählen</label>
             <select style="width: 400px;" class="form-select" aria-label="Default select exemple" id="topic" name="topic">
