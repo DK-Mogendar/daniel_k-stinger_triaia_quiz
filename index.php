@@ -30,7 +30,7 @@
 
 <!-- FORMULAR "Themenwahl"-->
     <div style="padding: 20px;">
-        <form id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
+        <form class="frage" id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
             <!--Themenauswahl-->
             <label for="quiz-topic" class="="form-label>Quiz Thema - bitte auswählen</label>
             <select style="width: 400px;" class="form-select" aria-label="Default select exemple" id="topic" name="topic">
