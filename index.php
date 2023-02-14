@@ -21,7 +21,7 @@
 <!--einbindung Javascript und Css Dokument-->
     <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/js/main.js"></script>
- </head>
+</head>
 <body>
     <div class="container-flex"><!--header start--> 
          <?php include './include/header.php' ?>     
