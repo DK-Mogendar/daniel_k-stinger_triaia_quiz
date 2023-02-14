@@ -99,8 +99,8 @@
     </div>
             
     <div class="container-fluid"><!--footer Start-->
-          <?php //include './include/footer2.php'?>  
-    </div><!--footer Ende-->
+          <?php include './include/footer2.php'?>  
+    </div>
 
 </body>
 </html>

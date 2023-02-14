@@ -2,10 +2,10 @@
     padding: 1%;
     background-image: url("/assets/img/glück.jpg");
 }
-body{
-    background-image: url("/assets/img/test2.jpg");
+body {
+    background-image: url("assets/img/glück.jpg");
 }
-.titelbox {
+.titelbox{
     padding: auto;
     border-radius: 30%;
     background-image: url("/assets/img/test2.jpg");
@@ -27,8 +27,5 @@ body{
     color:white;
 }
 .footer {
-    background-image: url("/assets/img/glück.jpg");
-}
-.footer2 {
     background-image: url("/assets/img/glück.jpg");
 }

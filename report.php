@@ -64,8 +64,8 @@
                 style="position:fixed;bottom:150px;">Neues Quiz</button>
     </div>
       
-    <!--<div class="container-flex"><!--footer Start-->
-          <?php //include './include/footer.php'?>  
-    </div><!--footer Ende-->
+    <div class="container-flex"><!--footer Start-->
+          <?php include './include/footer.php'?>  
+    </div>
 </body>
 </html>

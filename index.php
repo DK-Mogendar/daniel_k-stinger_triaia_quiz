@@ -19,14 +19,13 @@
 <!--Boostrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 <!--einbindung Javascript und Css Dokument-->
-    <link rel="stylesheet" href="/assets/css/style.css">  
+    <link rel="stylesheet" href="/assets/css/style.css">
     <script src="/assets/js/main.js"></script>
-</head>
-
+ </head>
 <body>
     <div class="container-flex"><!--header start--> 
          <?php include './include/header.php' ?>     
-    </div><!--header ende-->
+    </div>
 
 
 <!-- FORMULAR "Themenwahl"-->
@@ -71,9 +70,9 @@
             <input style="margin-top:20px;" type="submit" value="Start">
         </form>
     </div>
-<!--<div class="footer container">    footer Start-->
-        <?php //include './include/footer.php'?>  
-    </div><!--footer Ende-->
+    <div class="footer container">   <!--footer Start-->
+        <?php include './include/footer.php'?>  
+    </div>
 
 </body>
 </html>
