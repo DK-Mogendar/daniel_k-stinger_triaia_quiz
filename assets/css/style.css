@@ -14,31 +14,47 @@ body{
     background-image: url("/assets/img/test2.jpg");
 }
 .row{
-    margin: 20px;
+    margin: 15px;
     border-radius: 10px;
     background-image: url("/assets/img/greener.jpg");
     color:white;
 }
 .frage{
-    border-radius: 10px;
+    border-radius: 5px;
     background-image: url("/assets/img/greener.jpg");
     color:white;
 }
+.category {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 8px;
+    background-color: rgb(5, 99, 44);
+    color:white;
+}
 .question{
-    padding: 2%;
-    border-radius: 10px;
+    border-radius: 5px;
+    margin-bottom: 5px;
     background-color: rgb(5, 99, 44);
     color:white;
 }
 .thema{
-    padding: 3%;
     border-radius: 5px;
+    margin-bottom: 5px;
+    background-color: rgb(5, 99, 44);
+}
+.form-select {
+    margin-bottom: 5px;
+}
+.anzahl{
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 8px;
     background-color: rgb(5, 99, 44);
     color:white;
 }
-.anzahl{
-    padding: 3%;
-    border-radius:5px;
+.startB {
+    border-radius: 5px;
+    margin-bottom: 5px;
     background-color: rgb(5, 99, 44);
     color:white;
 }

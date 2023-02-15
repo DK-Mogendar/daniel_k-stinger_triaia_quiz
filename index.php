@@ -28,11 +28,11 @@
 <br>
 
 <!-- FORMULAR "Themenwahl"-->
-    <div class="frage container justify-content-center p-5 col-10" style="padding: 20px;">
-        <form class="" id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
+    <div class="frage container justify-content-center  col-10" style="padding: 20px;">
+        <form  id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
             <!--Themenauswahl-->
-            <label for="quiz-topic" class="thema"form-label>Quiz topic - select question   </label>
-            <select  class="form-select" aria-label="Default select exemple" id="topic" name="topic">
+            <label for="quiz-topic" class="category"form-label>Quiz topic - select question   </label>
+            <select class="form-select" aria-label="Default select exemple" id="topic" name="topic">
                 <!--<option value="music">Music</option>
                 <option value="ch-norris">Ch Norris</option>-->
                 <option value="animals">Animals</option>
@@ -50,7 +50,7 @@
             </select>
 
             <!--Anzahl Fragen-->
-            <label style="margin-top:20px;" for="questionNum" class="anzahl form-label">Number of Question</label>      
+            <label  for="questionNum" class="anzahl form-label">Number of Question</label>      
             <input style="width:100px" type="number" class="form-control" 
                   id="questionNum" name="questionNum" 
                   min="2" max="40" value="10">
@@ -66,7 +66,7 @@
 
             
             <!--submitbutton-->
-            <input style="margin-top:20px;" type="submit" value="Start">
+            <input class="startB" style="margin-top:20px;" type="submit" value="Start">
         </form>
     </div>
     <div>   <!--footer Start-->
