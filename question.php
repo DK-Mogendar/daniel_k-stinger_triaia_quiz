@@ -100,7 +100,7 @@
         </div>
     </div>
             
-    <div class="footer container">   <!--footer Start-->
+    <div>   <!--footer Start-->
         <?php include './include/footer.php'?>  
     </div>
 

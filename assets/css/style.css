@@ -1,13 +1,11 @@
 .header{
     padding: 1%;
-    background-image: url("/assets/img/glueck.jpg");
+    background-image: url("/assets/img/greener.jpg");
 }
 body{
-    /*background-image: url("/assets/img/bgWelt.jpg");*/
-    background-size: 100vw;
-
-    
-    /*color:white;*/
+    background-image: url("/assets/img/bgWelt.jpg");
+    max-width: 100%;
+    color:white;
 }
 .titelbox{
     padding: auto;
@@ -16,9 +14,21 @@ body{
 }
 
 .frage{
-    padding: auto;
-    border-radius: 30%;
-    background-image: url("/assets/img/glueck.jpg");
+  
+    border-radius: 10px;
+    background-image: url("/assets/img/greener.jpg");
+    color:white;
+}
+.thema{
+  
+    border-radius: 10px;
+    background-image: url("/assets/img/greener.jpg");
+    color:white;
+}
+.anzahl{
+  
+    border-radius: 10px;
+    background-image: url("/assets/img/greener.jpg");
     color:white;
 }
 .buton{
@@ -27,5 +37,5 @@ body{
     color:white;
 }
 .footer {
-    background-image: url("/assets/img/glueck.jpg");
+    background-image: url("/assets/img/greener.jpg");
 }
