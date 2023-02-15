@@ -60,11 +60,11 @@
                     possible <?php echo $maxPoints; ?> points.</h3>
         </div>
         <p>&nbsp;</p>
-        <button class="btn btn-primary" onclick="document.location='/index.php';"
+        <button class="btn btn-success col-10" onclick="document.location='/index.php';"
                 style="position:fixed;bottom:150px;">Neues Quiz</button>
     </div>
       
-    <div class="container-flex"><!--footer Start-->
+    <div><!--footer Start-->
           <?php include './include/footer.php'?>  
     </div>
 </body>

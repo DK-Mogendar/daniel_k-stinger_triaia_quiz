@@ -39,15 +39,15 @@
     </div><!--header ende-->
 
     <!--FORMULAR "Fragestellung"-->
-    <div class="row" STYLE="padding: 20px;">
+    <div class="row">
         <div class="col sm-8">
             <!--Fragestellung-->
-            <h7>Frage <?php echo ($currentQuestionIndex +1);?> von <?php echo $quiz["questionNum"];?></h7>
+            <h7 class="frage">Question <?php echo ($currentQuestionIndex +1);?> from <?php echo $quiz["questionNum"];?></h7>
             <p>&nbsp;</p>
-            <h3><?php echo $question["question_text"];?></h3>
+            <h3 class="question"><?php echo $question["question_text"];?></h3>
             <p>&nbsp;</p>
 
-            <form id="quiz-form" action="<?php echo $actionUrl; ?>" method="post" onsubmit="return navigate('next');">
+            <form class="thema" id="quiz-form" action="<?php echo $actionUrl; ?>" method="post" onsubmit="return navigate('next');">
                 <?php 
                     // Generelle Antwort_Radio_Buttons mit Beschriftung
 
@@ -93,7 +93,7 @@
 
                 <!-- submit -->
                 <!-- button type="submit" class="btn btn-primary" onclick="navigatePrevious();">Previous</button -->
-                <button type="submit" class="btn btn-primary" 
+                <button type="submit" class="btn btn-success" 
                         style="position:fixed;bottom:150px;">Next</button>
                 <p class="spacer"></p>
             </form>
@@ -101,7 +101,7 @@
     </div>
             
     <div>   <!--footer Start-->
-        <?php include './include/footer.php'?>  
+        <?php include './include/footer.php'?> 
     </div>
 
 </body>

@@ -1,6 +1,6 @@
 <header>
     <nav>
-        <div class="header container-felx d-flex justify-content-center text-white bg-secondary">
+        <div class="header container-felx d-flex justify-content-center text-white">
 
             <?php
             $name = "to Trivia Quiz";

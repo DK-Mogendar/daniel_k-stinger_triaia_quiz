@@ -1,9 +1,10 @@
 .header{
-    padding: 1%;
+    padding: 2%;
     background-image: url("/assets/img/greener.jpg");
 }
 body{
-    background-image: url("/assets/img/bgWelt.jpg");
+    background-image: url("/assets/img/bgWeltb.jpg");
+    background-repeat: no-repeat;
     max-width: 100%;
     color:white;
 }
@@ -12,23 +13,32 @@ body{
     border-radius: 25%;
     background-image: url("/assets/img/test2.jpg");
 }
-
-.frage{
-  
+.row{
+    margin: 20px;
     border-radius: 10px;
     background-image: url("/assets/img/greener.jpg");
+    color:white;
+}
+.frage{
+    border-radius: 10px;
+    background-image: url("/assets/img/greener.jpg");
+    color:white;
+}
+.question{
+    border-radius: 10px;
+    background-color: rgb(5, 99, 44);
     color:white;
 }
 .thema{
-  
-    border-radius: 10px;
-    background-image: url("/assets/img/greener.jpg");
+    padding: 3%;
+    border-radius: 5px;
+    background-color: rgb(5, 99, 44);
     color:white;
 }
 .anzahl{
-  
-    border-radius: 10px;
-    background-image: url("/assets/img/greener.jpg");
+    padding: 3%;
+    border-radius:5px;
+    background-color: rgb(5, 99, 44);
     color:white;
 }
 .buton{
@@ -37,5 +47,6 @@ body{
     color:white;
 }
 .footer {
+    padding: 2%;
     background-image: url("/assets/img/greener.jpg");
 }
