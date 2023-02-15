@@ -32,7 +32,7 @@
         // Hole alle Datenfelder zur Frage mit $id von der Datenbank
         $question = fetchQuestionById($id, $dbConnection);
 
-        prettyPrint($quiz, '$quiz='); 
+        //prettyPrint($quiz, '$quiz=');  wurde gebraucht um eine Fehler zu eroieren: undevind arraykey
     ?> 
     <div class="container-flex"><!--header start--> 
         <?php include './include/header.php' ?>   
