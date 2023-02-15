@@ -31,6 +31,8 @@
 
         // Hole alle Datenfelder zur Frage mit $id von der Datenbank
         $question = fetchQuestionById($id, $dbConnection);
+
+        prettyPrint($quiz, '$quiz='); 
     ?> 
     <div class="container-flex"><!--header start--> 
         <?php include './include/header.php' ?>   
@@ -38,11 +40,11 @@
 
     <!--FORMULAR "Fragestellung"-->
     <div class="row" STYLE="padding: 20px;">
-        <div class="colsm-8">
+        <div class="col sm-8">
             <!--Fragestellung-->
-            <h7>Frage<?php echo ($currentQuestionIndex +1); ?> von <?php echo $quiz["question"];?></h7>
+            <h7>Frage <?php echo ($currentQuestionIndex +1);?> von <?php echo $quiz["questionNum"];?></h7>
             <p>&nbsp;</p>
-            <h3><?php echo $question["question_text"];?>/h3>
+            <h3><?php echo $question["question_text"];?></h3>
             <p>&nbsp;</p>
 
             <form id="quiz-form" action="<?php echo $actionUrl; ?>" method="post" onsubmit="return navigate('next');">
@@ -98,8 +100,8 @@
         </div>
     </div>
             
-    <div class="container-fluid"><!--footer Start-->
-          <?php include './include/footer2.php'?>  
+    <div class="footer container">   <!--footer Start-->
+        <?php include './include/footer.php'?>  
     </div>
 
 </body>

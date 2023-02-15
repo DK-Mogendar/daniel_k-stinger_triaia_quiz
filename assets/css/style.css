@@ -3,10 +3,11 @@
     background-image: url("/assets/img/glueck.jpg");
 }
 body{
-    background-image: url("/assets/img/bgWelt.jpg");
+    /*background-image: url("/assets/img/bgWelt.jpg");*/
     background-size: 100vw;
+
     
-    color:white;
+    /*color:white;*/
 }
 .titelbox{
     padding: auto;

@@ -33,10 +33,10 @@
             <!--Themenauswahl-->
             <label for="quiz-topic" class="="form-label>Quiz Thema - bitte auswählen</label>
             <select style="width: 400px;" class="form-select" aria-label="Default select exemple" id="topic" name="topic">
-                <option value="music">Music</option>
-                <option value="ch-norris">Ch Norris</option>
+                <!--<option value="music">Music</option>
+                <option value="ch-norris">Ch Norris</option>-->
                 <option value="animals">Animals</option>
-                <option value="movies">Movies</option>
+                <!--<option value="movies">Movies</option>
                 <option value="d-n-d">D&D</option>
                 <option value="astronautics">Astronautics</option>
                 <option value="technology">Technologyy</option>
@@ -46,7 +46,7 @@
                 <option value="science">Science</option>
                 <option value="informatics">Informatics</option>
                 <option value="gen-knowledge"ograp>Gen Knowledge</option>
-                <option value="basketball">Basketball</option>
+                <option value="basketball">Basketball</option>-->
             </select>
 
             <!--Anzahl Fragen-->
