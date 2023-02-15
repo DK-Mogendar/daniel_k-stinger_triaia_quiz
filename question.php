@@ -40,7 +40,7 @@
 
     <!--FORMULAR "Fragestellung"-->
     <div class="row">
-        <div class="col sm-8">
+        <div class="col mb-2 sm-8">
             <!--Fragestellung-->
             <h7 class="frage">Question <?php echo ($currentQuestionIndex +1);?> from <?php echo $quiz["questionNum"];?></h7>
             <p>&nbsp;</p>
@@ -93,7 +93,7 @@
 
                 <!-- submit -->
                 <!-- button type="submit" class="btn btn-primary" onclick="navigatePrevious();">Previous</button -->
-                <button type="submit" class="btn btn-success" 
+                <button type="submit" class="btn btn-warning" 
                         style="position:fixed;bottom:150px;">Next</button>
                 <p class="spacer"></p>
             </form>

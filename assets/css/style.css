@@ -25,6 +25,7 @@ body{
     color:white;
 }
 .question{
+    padding: 2%;
     border-radius: 10px;
     background-color: rgb(5, 99, 44);
     color:white;
@@ -49,4 +50,5 @@ body{
 .footer {
     padding: 2%;
     background-image: url("/assets/img/greener.jpg");
+    max-width: 100%;
 }

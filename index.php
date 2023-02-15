@@ -31,7 +31,7 @@
     <div class="frage container justify-content-center p-5 col-10" style="padding: 20px;">
         <form class="" id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
             <!--Themenauswahl-->
-            <label for="quiz-topic" class="thema"form-label>Quiz topic - select question</label>
+            <label for="quiz-topic" class="thema"form-label>Quiz topic - select question   </label>
             <select  class="form-select" aria-label="Default select exemple" id="topic" name="topic">
                 <!--<option value="music">Music</option>
                 <option value="ch-norris">Ch Norris</option>-->
