@@ -60,8 +60,10 @@
                     possible <?php echo $maxPoints; ?> points.</h3>
         </div>
         <p>&nbsp;</p>
+        <div class="next">
         <button class="btn btn-warning " onclick="document.location='/index.php';"
-                style="position:fixed;bottom:150px;">Neues Quiz</button>
+                style="position:fixed;bottom:180px;">Neues Quiz</button>
+        </div> 
     </div>
       
     <div><!--footer Start-->

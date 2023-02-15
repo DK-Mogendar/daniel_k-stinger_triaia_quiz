@@ -95,7 +95,7 @@
                 <!-- button type="submit" class="btn btn-primary" onclick="navigatePrevious();">Previous</button -->
                <div class="next">     
                     <button type="submit" class="btn btn-warning" 
-                        style="position:fixed;bottom:120px;">Next</button>
+                        style="position:fixed;bottom:180px;">Next</button>
                </div>
                <p class="spacer"></p>
                

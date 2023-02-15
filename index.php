@@ -66,7 +66,9 @@
 
             
             <!--submitbutton-->
-            <input class="startB" style="margin-top:20px;" type="submit" value="Start">
+            <div class="next">   
+            <input class="btn btn-warning" style="position:fixed;bottom:180px;" type="submit" value="Start">
+            </div>
         </form>
     </div>
     <div>   <!--footer Start-->
