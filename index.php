@@ -28,7 +28,7 @@
 <br>
 
 <!-- FORMULAR "Themenwahl"-->
-    <div class="frage container justify-content-center  col-10" style="padding: 20px;">
+    <div class="frage container justify-content-center  col-10">
         <form  id="quiz-form" action="question.php" method="post" onsubmit="return navigate('next');"> 
             <!--Themenauswahl-->
             <label for="quiz-topic" class="category"form-label>Quiz topic - select question   </label>

@@ -1,4 +1,5 @@
 .header{
+    margin-bottom:3%;
     padding: 2%;
     background-image: url("/assets/img/greener.jpg");
 }
@@ -8,20 +9,22 @@ body{
     max-width: 100%;
     color:white;
 }
-.titelbox{
-    padding: auto;
-    border-radius: 25%;
-    background-image: url("/assets/img/test2.jpg");
-}
+
 .row{
-    margin: 15px;
     border-radius: 10px;
     background-image: url("/assets/img/greener.jpg");
     color:white;
 }
 .frage{
+    padding: 20px;
     border-radius: 5px;
     background-image: url("/assets/img/greener.jpg");
+    color:white;
+}
+.fragen{
+    padding: 3px;
+    border-radius: 5px;
+    background-color: rgb(5, 99, 44);
     color:white;
 }
 .category {
@@ -34,10 +37,12 @@ body{
 .question{
     border-radius: 5px;
     margin-bottom: 5px;
+    padding: 8px;
     background-color: rgb(5, 99, 44);
     color:white;
 }
 .thema{
+    padding: 8px;
     border-radius: 5px;
     margin-bottom: 5px;
     background-color: rgb(5, 99, 44);
@@ -60,8 +65,10 @@ body{
 }
 .buton{
     border-radius: 25%;
-    background-image: url("/assets/img/grüngrün.jpg");
     color:white;
+}
+.btn {
+    
 }
 .footer {
     padding: 2%;

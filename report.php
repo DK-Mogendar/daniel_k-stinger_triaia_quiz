@@ -51,7 +51,7 @@
         $maxPoints = $_SESSION["quiz"]["questionNum"];
     ?>
 
-    <div class="row" style="padding: 20px;">
+    <div class="frage container justify-content-center  col-10" style="padding: 20px;">
         <div class="col-sm-8">
             <!-- Bilanz -->
             <h7>Congratulations!</h7>
@@ -60,7 +60,7 @@
                     possible <?php echo $maxPoints; ?> points.</h3>
         </div>
         <p>&nbsp;</p>
-        <button class="btn btn-success col-10" onclick="document.location='/index.php';"
+        <button class="btn btn-warning " onclick="document.location='/index.php';"
                 style="position:fixed;bottom:150px;">Neues Quiz</button>
     </div>
       
