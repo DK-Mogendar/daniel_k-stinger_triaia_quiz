@@ -77,39 +77,46 @@ Deutsch
 
 # Docker für die lokale Webentwicklung: ein grundlegender LEMP-Stack (Linux, Nginx, MySQL, PHP)
 
-Figmamockup:
+1. Als erstes habe ich die Dokumentation (Presentationen) angeschaut und Studiert.
 
-https://www.figma.com/file/J1kBP2g1Z1z5gdY5r1dqOD/Triva-Quiz?node-id=0%3A1&t=z3647AJYZAHe7kmo-1
+   https://docs.google.com/presentation/d/1wcAz6EP01cF9UkrrBhp-n_BlQQyKJi14/edit#slide=id.p1
 
-Habe am Anfang richtige Probleme gehabt. Aber als ich die Presentationen nochmals durch arbeitete und einige Recherchen gemacht habe. Sowie w3Scools einbezog gings recht gut.
-
-Hinweis:
-
-Zur zeit geht nur amimals die restlichen Gruppen sind im Code auskommentiert.
-Muss noch die Datenbank vervollständigen. Werde sie mir von Kollengen holen und sie noch hinzufügen.
-
-Miro Retrospektieve:
-
-https://miro.com/welcomeonboard/UzkzVTNxMHNnZm83eWdwQkZieUlhVHlwWnZsOFNkdW9TOUNKWHdodUR6REZsbmlqVmZOUE9hazh1MVJoTFRuNXwzNDU4NzY0NTQxMDIyOTY2NjEwfDI=?share_link_id=693965148097
-
-1. Als erstes habe ich die Dokumentation (Schul Presentationen) angeschaut und Studiert.
-
-https://docs.google.com/presentation/d/1wcAz6EP01cF9UkrrBhp-n_BlQQyKJi14/edit#slide=id.p1
-
-https://docs.google.com/presentation/d/15FACFwE7WgUO6bS3V0vtpbxubvlr7H-g/edit
+   https://docs.google.com/presentation/d/15FACFwE7WgUO6bS3V0vtpbxubvlr7H-g/edit
 
 2. Habe ich mich noch auf W3Scools schlau gemacht.
 
-https://www.w3schools.com/mysql/mysql_where.asp
+   https://www.w3schools.com/mysql/mysql_where.asp
 
-3. Habe mir den Code von Chris aus dem Discord geholt und damit meinen Code auf Fehler überprüft und vervollständigt und angepasst.
+3. Figmamockup:
 
-4. Habe mich der Optik gewidmet und Contend gesucht.
+   https://www.figma.com/file/J1kBP2g1Z1z5gdY5r1dqOD/Triva-Quiz?node-id=0%3A1&t=z3647AJYZAHe7kmo-1
 
-5. Arbeiten mit Bootstrap und CSS für die Responsieve Seit.
+   Habe am Anfang richtige Probleme gehabt. Aber als ich die Presentationen nochmals durch arbeitete und einige Recherchen gemacht habe. 
+   Sowie w3Scools einbezog gings recht gut.
 
-6. Debuging und Finishing
+4. Habe mir den Code von Chris aus dem Discord geholt und damit meinen Code auf Fehler überprüft und vervollständigt und angepasst.
 
+5. Habe mich der Optik gewidmet und Contend gesucht.
+
+6. Arbeiten mit Bootstrap und CSS für die Responsieve Seit.
+
+7. Debuging und Finishing
+
+8. Ich werde zu einem Späteren Zeipunkt noch die Datenbank mit den Fragen Meiner Schulkollegen vervollständigen. 
+   So das auch alle eingepfegten Kategorien vonktionieren. Zur Zeit sid diese im Code auskommentiert.
+
+9. Hinweis:
+
+   Zur zeit geht nur amimals die restlichen Gruppen sind im Code auskommentiert.
+   Muss noch die Datenbank vervollständigen. Werde sie mir von Kollengen holen und sie noch hinzufügen.
+
+10. Hinweis 2:
+
+    Die libary habe ich in Visualcode auch noch abgelegt.
+    
+11. Miro Retrospektieve:
+
+    https://miro.com/welcomeonboard/UzkzVTNxMHNnZm83eWdwQkZieUlhVHlwWnZsOFNkdW9TOUNKWHdodUR6REZsbmlqVmZOUE9hazh1MVJoTFRuNXwzNDU4NzY0NTQxMDIyOTY2NjEwfDI=?share_link_id=693965148097
 
 ## Inhalt
 
