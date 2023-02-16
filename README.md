@@ -72,6 +72,9 @@ Deutsch
 
 
 
+
+
+
 # Docker für die lokale Webentwicklung: ein grundlegender LEMP-Stack (Linux, Nginx, MySQL, PHP)
 
 Figmamockup:
@@ -106,11 +109,6 @@ https://www.w3schools.com/mysql/mysql_where.asp
 5. Arbeiten mit Bootstrap und CSS für die Responsieve Seit.
 
 6. Debuging und Finishing
-
-
-
-
-
 
 
 ## Inhalt
