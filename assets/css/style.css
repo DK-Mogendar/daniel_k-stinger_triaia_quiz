@@ -70,10 +70,7 @@ body{
     background-color: rgb(5, 99, 44);
     color:white;
 }
-.buton{
-    border-radius: 25%;
-    color:white;
-}
+
 .next {
     border-radius: 5px;
     /*position:fixed;bottom:18%;

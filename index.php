@@ -67,7 +67,7 @@
             
             <!--submitbutton-->
             <div class="next">   
-            <input class="btn btn-warning" style="position:fixed;bottom:180px;" type="submit" value="Start">
+            <input class="btn btn-warning"  type="submit" value="Start">
             </div>
         </form>
     </div>
