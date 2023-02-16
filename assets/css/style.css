@@ -9,6 +9,13 @@ body{
     max-width: 100%;
     color:white;
 }
+.titel {
+    border-radius: 5px;
+    background-color: darkgreen;
+    color: chartreuse;
+    border: 3px;
+    border-color: black;
+}
 
 .row{
     border-radius: 10px;
@@ -67,17 +74,17 @@ body{
     border-radius: 25%;
     color:white;
 }
-.btn {
-    padding: 8px;
-}
 .next {
     border-radius: 5px;
     position:fixed;bottom:150px;
-    margin-left: 3px;
-    padding: 10px;
-    background-image: url("/assets/img/greener.jpg");
+    position:fixed;left:180px;
+    background-color: rgb(5, 99, 44);
     width: 100px;
     height:100px;
+}
+.btn {
+    margin-left: 17px;
+    margin-right: 1px;
 }
 .footer {
     padding: 2%;

@@ -62,7 +62,7 @@
         <p>&nbsp;</p>
         <div class="next">
         <button class="btn btn-warning " onclick="document.location='/index.php';"
-                style="position:fixed;bottom:180px;">Neues Quiz</button>
+                style="position:fixed;bottom:180px;">new</button>
         </div> 
     </div>
       

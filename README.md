@@ -70,6 +70,11 @@ $ docker-compose down -v --rmi all --remove-orphans
 Deutsch
 # Docker für die lokale Webentwicklung: ein grundlegender LEMP-Stack (Linux, Nginx, MySQL, PHP)
 
+https://www.figma.com/file/J1kBP2g1Z1z5gdY5r1dqOD/Triva-Quiz?node-id=0%3A1&t=z3647AJYZAHe7kmo-1
+
+Habe am Anfang richtige Probleme gehabt. Aber als ich die Presentationen nochmals durch arbeitete und einige Recherchen  gemacht habe und w3Scools einbezog gings recht gut.
+
+
 ## Inhalt
 
 Dieser Zweig enthält einen grundlegenden LEMP-Stack, der auf Docker ausgeführt und von Docker Compose orchestriert wird, einschließlich:
