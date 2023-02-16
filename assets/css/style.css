@@ -76,16 +76,13 @@ body{
 }
 .next {
     border-radius: 5px;
-    position:fixed;bottom:150px;
-    position:fixed;left:180px;
-    background-color: rgb(5, 99, 44);
+    /*position:fixed;bottom:18%;
+    position:fixed;left:300px;
+    background-color: rgb(5, 99, 44);*/
     width: 100px;
     height:100px;
 }
-.btn {
-    margin-left: 17px;
-    margin-right: 1px;
-}
+
 .footer {
     padding: 2%;
     background-image: url("/assets/img/greener.jpg");
