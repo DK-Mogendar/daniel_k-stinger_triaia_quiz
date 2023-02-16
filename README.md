@@ -81,7 +81,7 @@ Habe am Anfang richtige Probleme gehabt. Aber als ich die Presentationen nochmal
 Hinweis:
 
 Zur zeit geht nur amimals die restlichen Gruppen sind im Code auskommentiert.
-Muss noch die Datenbank vervollständigen. Werde sie mir von kollengen holen und sie noch hinzufügen.
+Muss noch die Datenbank vervollständigen. Werde sie mir von Kollengen holen und sie noch hinzufügen.
 
 
 
