@@ -1,80 +1,3 @@
-Englisch
-# Docker for local web development: a basic LEMP stack (Linux, Nginx, MySQL, PHP)
-
-## Content
-
-This branch contains a basic LEMP stack running on Docker and orchestrated by Docker Compose, including:
-
-- A container for Nginx;
-- A container for PHP;
-- A container for MySQL;
-- A container for phpMyAdmin;
-
-## Prerequisites
-
-Make sure [Docker Desktop for Mac or PC](https://www.docker.com/products/docker-desktop) is installed and running, or head [over here](https://docs.docker.com/install/) if you are a Linux user. You will also need a terminal running [Git](https://git-scm.com/).
-
-This setup also uses localhost's port 8000 for Nginx, so make sure it is available.
-
-## Directions of use
-
-Clone the repository and change the current directory for the project's root:
-
-```
-$ git clone https://github.com/opportunity-zh/opp-php-mysql.git
-
-$ cd opp-php-mysql
-```
-
-Run the following command:
-
-```
-$ docker-compose up -d
-```
-
-This may take a little bit of time, as some Docker images might need downloading.
-
-## Explanation
-
-The images used by the setup are listed and configured in [`docker-compose.yml`](https://github.com/opportunity-zh/opp-php-mysql/docker-compose.yml).
-
-When building and starting the containers based on the images for the first time, a MySQL database named `library` is automatically created (you can pick a different name for the MYSQL_DATABASE in the MySQL service's description in `docker-compose.yml`).
-
-The database data is persisted in its own local directory through the volume `db_data`, which is mounted onto MySQL's container. A phpMyAdmin interface is available at [localhost:8080](http://localhost:8080) (the database credentials are webDev / opport2022).
-
-## Cleaning up
-
-To stop the containers:
-
-```
-$ docker-compose stop
-```
-
-To destroy the containers:
-
-```
-$ docker-compose down
-```
-
-To destroy the containers and the associated volumes:
-
-```
-$ docker-compose down -v
-```
-
-To remove everything, including images and orphan containers:
-
-```
-$ docker-compose down -v --rmi all --remove-orphans
-```
-Deutsch
-
-
-
-
-
-
-
 # Docker für die lokale Webentwicklung: ein grundlegender LEMP-Stack (Linux, Nginx, MySQL, PHP)
 
 1. Als erstes habe ich die Dokumentation (Presentationen) angeschaut und Studiert.
@@ -83,18 +6,20 @@ Deutsch
 
    https://docs.google.com/presentation/d/15FACFwE7WgUO6bS3V0vtpbxubvlr7H-g/edit
 
-2. Habe ich mich noch auf W3Scools schlau gemacht.
+2. Dann habe ich mich noch auf W3Scools schlau gemacht.
 
    https://www.w3schools.com/mysql/mysql_where.asp
 
 3. Figmamockup:
+   Dann habe ich das Figma Mockup angelegt (zum schluss noch angepasst)
 
    https://www.figma.com/file/J1kBP2g1Z1z5gdY5r1dqOD/Triva-Quiz?node-id=0%3A1&t=z3647AJYZAHe7kmo-1
 
    Habe am Anfang richtige Probleme gehabt. Aber als ich die Presentationen nochmals durch arbeitete und einige Recherchen gemacht habe. 
    Sowie w3Scools einbezog gings recht gut.
 
-4. Habe mir den Code von Chris aus dem Discord geholt und damit meinen Code auf Fehler überprüft und vervollständigt und angepasst.
+4. Habe mir den Code von Chris aus dem Discord geholt und damit meinen Code 
+   auf Fehler überprüft und vervollständigt und angepasst.
 
 5. Habe mich der Optik gewidmet und Contend gesucht.
 
@@ -102,21 +27,23 @@ Deutsch
 
 7. Debuging und Finishing
 
-8. Ich werde zu einem Späteren Zeipunkt noch die Datenbank mit den Fragen Meiner Schulkollegen vervollständigen. 
+8. Ich werde zu einem Späteren Zeipunkt noch die Datenbank mit den Fragen 
+   Meiner Schulkollegen vervollständigen. 
    So das auch alle eingepfegten Kategorien vonktionieren. Zur Zeit sid diese im Code auskommentiert.
 
 9. Hinweis:
 
-   Zur zeit geht nur amimals die restlichen Gruppen sind im Code auskommentiert.
-   Muss noch die Datenbank vervollständigen. Werde sie mir von Kollengen holen und sie noch hinzufügen.
+   Zur zeit geht nur Amimals die restlichen Fragegruppen sind im Code auskommentiert.(funktional)
+   ich muss noch die Datenbank vervollständigen. Werde sie mir von Schul-Kollengen holen und sie noch hinzufügen.
 
 10. Hinweis 2:
 
-    Die libary habe ich in Visualcode auch noch abgelegt.
+    Die libary habe ich in Visualcode auch noch abgelegt. Sind unter img zu finden.
     
-11. Miro Retrospektieve:
+11. Miro Retrospektieve: 
 
     https://miro.com/welcomeonboard/UzkzVTNxMHNnZm83eWdwQkZieUlhVHlwWnZsOFNkdW9TOUNKWHdodUR6REZsbmlqVmZOUE9hazh1MVJoTFRuNXwzNDU4NzY0NTQxMDIyOTY2NjEwfDI=?share_link_id=693965148097
+
 
 ## Inhalt
 
